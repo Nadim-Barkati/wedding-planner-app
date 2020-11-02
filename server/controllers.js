@@ -80,3 +80,5 @@ exports.getAllUsers =(req, res)=>{
 exports.addUser =(req, res)=>{
   db.addUser().then(data => {res.status(200).json(data) })
    .catch(error => res.status(500).send(error))}
+
+   
